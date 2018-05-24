@@ -40,15 +40,14 @@
 			<Add option="-Wall" />
 			<Add option="-mms-bitfields" />
 			<Add option="-DHAVE_GLIB" />
-			<Add directory="D:/msys64/mingw32/include" />
-			<Add directory="D:/msys64/mingw32/include/glib-2.0" />
-			<Add directory="D:/msys64/mingw32/lib/glib-2.0/include" />
-			<Add directory="D:/msys64/mingw32/include/gtk-3.0" />
-			<Add directory="D:/msys64/mingw32/lib/gtk-3.0/include" />
-			<Add directory="D:/msys64/mingw32/include/gdk-pixbuf-2.0" />
-			<Add directory="D:/msys64/mingw32/include/pango-1.0" />
-			<Add directory="D:/msys64/mingw32/include/atk-1.0" />
-			<Add directory="D:/msys64/mingw32/include/cairo" />
+			<Add directory="$(TARGET_COMPILER_DIR)include" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/glib-2.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)lib/glib-2.0/include" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/gtk-3.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/gdk-pixbuf-2.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/pango-1.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/atk-1.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/cairo" />
 			<Add directory="../../uglib" />
 			<Add directory="../../uget" />
 			<Add directory="../../ui-gtk" />
@@ -73,7 +72,7 @@
 			<Add library="ws2_32" />
 			<Add library="winmm" />
 			<Add library="PowrProf" />
-			<Add directory="D:/msys64/mingw32/lib" />
+			<Add directory="$(TARGET_COMPILER_DIR)lib" />
 		</Linker>
 		<Unit filename="../../ui-gtk/UgtkAboutDialog.c">
 			<Option compilerVar="CC" />

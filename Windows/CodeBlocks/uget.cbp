@@ -36,13 +36,13 @@
 			<Add option="-DHAVE_GLIB" />
 			<Add directory="../../uglib" />
 			<Add directory="../../uget" />
-			<Add directory="D:/msys64/mingw32/include" />
-			<Add directory="D:/msys64/mingw32/include/glib-2.0" />
-			<Add directory="D:/msys64/mingw32/lib/glib-2.0/include" />
+			<Add directory="$(TARGET_COMPILER_DIR)include" />
+			<Add directory="$(TARGET_COMPILER_DIR)/include/glib-2.0" />
+			<Add directory="$(TARGET_COMPILER_DIR)lib/glib-2.0/include" />
 		</Compiler>
 		<Linker>
 			<Add library="curl.dll" />
-			<Add directory="D:/msys64/mingw32/lib" />
+			<Add directory="$(TARGET_COMPILER_DIR)lib" />
 		</Linker>
 		<Unit filename="../../uget/UgetA2cf.c">
 			<Option compilerVar="CC" />
